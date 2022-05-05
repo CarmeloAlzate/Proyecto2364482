@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!--libreria bundle que contiene popper y bootstrap.js-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <title>Ejercicio Práctico Bootstrap 4 Flex</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark  bg-dark fixed-top">
+        <a class="navbar-brand" href="">HOTELES</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item "><a class="nav-link" href="#">HOME</a></li>
+                <li class="nav-item "><a class="nav-link" href="about.html">Nosotros</a></li>
+                <li class="nav-item "><a class="nav-link" href="prices.html">Precios</a></li>
+                <li class="nav-item "><a class="nav-link" href="terms.html">Términos</a></li>
+                <li class="nav-item active"><a class="nav-link" href="contacts.html">Contactos</a></li>
+            </ul>
+        </div>
+    </nav>
+  
+    <div class="jumbotron">
+        VARIEDAD TURISTICA COLOMBIANA
+    </div>
+    <div class="container">
+        <nav aria-label="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item "><a href="index.html">HOME</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contactos</li>
+            </ol>
+        </nav>
+        <p>
+            <section>
+            <h3>CONTACTO</h3>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <label for="nom">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="ape">Apellido:</label>
+                        <input type="text" class="form-control" id="ape" placeholder="Ingrese su apellido">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label for="mail">E-mail:</label>
+                    <input type="email" class="form-control" id="mail" placeholder="Ingrese su Correo">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <label for="dir">Domicilio:</label>
+                        <input type="text" class="form-control" id="dir" placeholder="Ingrese su dirección">
+                    </div>
+                    <div class="form-group col-sm-3">
+                        <label for="dept">Departamento:</label>
+                        <select  id="dept" class="form-control">
+                            <option selected>Antioquia</option>
+                            <option >Cundinamarca</option>
+                            <option >Valle del Cauca</option>
+                            <option >Santander</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" class="form-control" rows="10"></textarea>
+                </div>
+                <div class="form-group">                
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label for="gridCheck" class="form-check-label">Quiero que me contacten</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </form>
+            </section>
+        </p>
+        </div>
+    <footer >
+        <div class="row">
+            <div class="col-sm-4 d-flex flex-column">
+                <a href="http://www.facebook.com"><i class="bi bi-facebook"></i> Facebook</a>
+                <a href="http://www.twitter.com"><i class="bi bi-twitter"></i> twitter</a>
+                <a href="http://www.instagram.com"><i class="bi bi-instagram"></i> Instagram</a> 
+                <a href="http://plus.google.com"><i class="bi bi-google"></i> Google +</a>
+            </div>
+            <div class="col-sm-4">
+                <address>
+                    <h3>Oficina</h3>
+                    <p><span class="oi oi-home footer-address-icon"></span>Medellín, Colombia Cra 84 # 42 - 23</p>
+                    <p><span class="oi oi-phone footer-address-icon"></span>+57 300-345-25-54</p>
+                    <p><span class="oi oi-inbox footer-address-icon"></span>mail@gmail.com</p>
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-content">
+                <a href="http://www.facebook.com">Contactenos</a>
+                <a href="http://www.twitter.com">Como llegar</a>
+                <a href="http://www.instagram.com">Desarrolladores</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

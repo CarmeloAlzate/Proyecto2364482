@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!--libreria bundle que contiene popper y bootstrap.js-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <title>Ejercicio Práctico Bootstrap 4 Flex</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark  bg-dark fixed-top">
+        <a class="navbar-brand" href="">HOTELES</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="#">HOME</a></li>
+                <li class="nav-item "><a class="nav-link" href="about.html">Nosotros</a></li>
+                <li class="nav-item "><a class="nav-link" href="prices.html">Precios</a></li>
+                <li class="nav-item "><a class="nav-link" href="terms.html">Términos</a></li>
+                <li class="nav-item "><a class="nav-link" href="contacts.html">Contactos</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        VARIEDAD TURISTICA COLOMBIANA
+    </div>
+    <div class="container">
+        <nav aria-label="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">HOME</li>
+
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-sm-4">
+                <p>
+                <h2>Ecoturismo</h2>
+                <p>Turismo en nuestros parques naturales</p>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <p>
+                <h2>Turismo Xtremo</h2>
+                <p> con actividades extremas de todo tipo</p>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <p>
+                <h2>Turismo Religioso</h2>
+                <p>Turismo por lugares y templos con simbolismo religioso</p>
+                </p>
+            </div>
+        </div>
+        <hr>
+        
+        <img src="imagenes/banner_hotel.jpg" class="img-fluid" alt="">
+
+        <hr>
+        <div class="d-flex flex-wrap">
+            <div class="card tarjeta d-flex flex-column justify-content-between ml-2">
+                <div class="card-header">OFERTA</div>
+                <img  class="card-img-top" src="imagenes/foto_hotel.jpg" alt="hotel san felix">
+
+                <div class="card-body">
+                    <h4 class="card-title">San Felix</h4>
+                    <h6 class="card-subtitle text-muted">Colombia</h6>
+                    <p class="card-text"> con actividades de parapente</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-info btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
+                </div>
+            </div>
+
+            <div class="card tarjeta d-flex flex-column justify-content-between ml-2">
+                <div class="card-header">OFERTA</div>
+                <img  class="card-img-top" src="imagenes/foto_hotel.jpg" alt="hotel san felix">
+                <div class="card-body">
+                    <h4 class="card-title">Paracaidismo</h4>
+                    <h6 class="card-subtitle text-muted">Colombia</h6>
+                    <p class="card-text"> con actividades extremas</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-info btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
+                </div>
+            </div>
+
+            <div class="card tarjeta d-flex flex-column justify-content-between ml-2">
+                <div class="card-header">OFERTA</div>
+                <img  class="card-img-top" src="imagenes/foto_hotel.jpg" alt="hotel san felix">
+                <div class="card-body">
+                    <h4 class="card-title">Hacienda Napoles</h4>
+                    <h6 class="card-subtitle text-muted">Colombia</h6>
+                    <p class="card-text"> con actividades extremas de todo tipo</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-info btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
+                </div>
+            </div>
+
+            <div class="card tarjeta d-flex flex-column justify-content-between ml-2">
+                <div class="card-header">OFERTA</div>
+                <img  class="card-img-top" src="imagenes/foto_hotel.jpg" alt="hotel san felix">
+                <div class="card-body">
+                    <h4 class="card-title">Santuario Las Lajas</h4>
+                    <h6 class="card-subtitle text-muted">Colombia</h6>
+                    <p class="card-text"> con actividades religiosas</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-info btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
+                </div>
+            </div>
+
+            <div class="card tarjeta d-flex flex-column justify-content-between ml-2">
+                <div class="card-header">OFERTA</div>
+                <img  class="card-img-top" src="imagenes/foto_hotel.jpg" alt="hotel san felix">
+                <div class="card-body">
+                    <h4 class="card-title">Catedral de Sal</h4>
+                    <h6 class="card-subtitle text-muted">Colombia</h6>
+                    <p class="card-text"> con actividades religiosas y tour</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-info btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
+                </div>
+            </div>
+
+            <div class="card tarjeta d-flex flex-column justify-content-between ml-2">
+                <div class="card-header">OFERTA</div>
+                <img  class="card-img-top" src="imagenes/foto_hotel.jpg" alt="hotel san felix">
+                <div class="card-body">
+                    <h4 class="card-title">Pueblito Paisa</h4>
+                    <h6 class="card-subtitle text-muted">Colombia</h6>
+                    <p class="card-text"> con actividades extremas de todo tipo</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-info btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
+                </div>
+            </div>
+            <div class="card tarjeta d-flex flex-column justify-content-between ml-2">
+                <div class="card-header">OFERTA</div>
+                <img  class="card-img-top" src="imagenes/foto_hotel.jpg" alt="hotel san felix">
+                <div class="card-body">
+                    <h4 class="card-title">Pueblito Paisa</h4>
+                    <h6 class="card-subtitle text-muted">Colombia</h6>
+                    <p class="card-text"> con actividades extremas de todo tipo</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-info btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
+                </div>
+            </div>
+            <div class="card tarjeta d-flex flex-column justify-content-between ml-2">
+                <div class="card-header">OFERTA</div>
+                <img  class="card-img-top" src="imagenes/foto_hotel.jpg" alt="hotel san felix">
+                <div class="card-body">
+                    <h4 class="card-title">Hacienda Napoles</h4>
+                    <h6 class="card-subtitle text-muted">Colombia</h6>
+                    <p class="card-text"> con actividades extremas de todo tipo</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-info btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
+                </div>
+            </div>
+            <div class="card tarjeta d-flex flex-column justify-content-between ml-2">
+                <div class="card-header">OFERTA</div>
+                <img  class="card-img-top" src="imagenes/foto_hotel.jpg" alt="hotel san felix">
+                <div class="card-body">
+                    <h4 class="card-title">Hacienda Napoles</h4>
+                    <h6 class="card-subtitle text-muted">Colombia</h6>
+                    <p class="card-text"> con actividades extremas de todo tipo</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-info btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-sm-4 d-flex flex-column">
+                <a href="http://www.facebook.com"><i class="bi bi-facebook"></i> Facebook</a>
+                <a href="http://www.twitter.com"><i class="bi bi-twitter"></i> twitter</a>
+                <a href="http://www.instagram.com"><i class="bi bi-instagram"></i> Instagram</a>
+                <a href="http://plus.google.com"><i class="bi bi-google"></i> Google +</a>
+            </div>
+            <div class="col-sm-4">
+                <address>
+                    <h3>Oficina</h3>
+                    <p><span class="oi oi-home footer-address-icon"></span>Medellín, Colombia Cra 84 # 42 - 23</p>
+                    <p><span class="oi oi-phone footer-address-icon"></span>+57 300-345-25-54</p>
+                    <p><span class="oi oi-inbox footer-address-icon"></span>mail@gmail.com</p>
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-content">
+                <a href="http://www.facebook.com">Contactenos</a>
+                <a href="http://www.twitter.com">Como llegar</a>
+                <a href="http://www.instagram.com">Desarrolladores</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
+
+6)	Agrega una imagen en cada una de las cards que representen el artículo que estás ofreciendo.
+
+7)	Agrega una imagen en la página principal a modo de banner o encabezado que haga atractivo el sitio o muestre una promoción. Utiliza los componentes adecuados para este propósito.
+
+8)	Subir los cambios al repositorio utilizando los comandos de GIT y revisar los logs.
