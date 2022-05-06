@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 4 stuf-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Modal -->
+    <script href="js/ModalLogin.js"></script>
+    <!-- DATA TABLE -->
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">	
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="headder">
+
+        <!-- Banner -->
+        <img class="banner" src="imagenes/banner.png" alt="Banner"/>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="#"><img src="imagenes/logo.png" alt="logo" height="35"></a>
+
+            <!-- Opciones navbar-->
+            <ul class="navbar-nav mr-auto">
+
+                <!-- Productos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Juegos
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="RegistrarJuego.html">Registrar
+                            juego</a>
+                        <a class="dropdown-item" href="ListarJuegos.html">Listar
+                            juegos</a>
+                        <hr />
+                        <a class="dropdown-item" href="RegistrarGeneros.html">Registrar
+                            género de juegos</a>
+                        <a class="dropdown-item" href="ListarGeneros.html">Listar géneros de
+                            juegos</a>
+                    </div>
+                </li>
+
+                <!-- Proveedores -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Proveedores
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="RegistrarProveedor.html">Registrar
+                            proveedor</a>
+                        <a class="dropdown-item" href="ListarProveedores.html">Listar
+                            proveedores</a>
+                    </div>
+                </li>
+
+                <!-- Empleados -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Empleados
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="RegistrarEmpleado.html">Registrar
+                            empleado</a>
+                        <a class="dropdown-item" href="ListarEmpleados.html">Listar empleados</a>
+                    </div>
+                </li>
+                
+                <!-- Compras -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Compras
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="RegistrarCompra.html">Registrar compra</a>
+                        <a class="dropdown-item" href="ListarCompras.html">Listar compras</a>
+                    </div>
+                </li>
+
+                <!-- Ventas -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Ventas
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="RegistrarVenta.html">Registrar venta</a>
+                        <a class="dropdown-item" href="ListarVentas.html">Listar ventas</a>
+                    </div>
+                </li>
+
+                <!-- Facturas -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Facturas
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="RegistrarFactura.html">Registrar factura</a>
+                        <a class="dropdown-item" href="ListarFacturas.html">Listar facturas</a>
+                    </div>
+                </li>
+
+                <!-- Clientes -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Clientes
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="RegistrarCliente.html">Registrar
+                            cliente</a>
+                        <a class="dropdown-item" href="ListarClientes.html">Listar clientes</a>
+                    </div>
+                </li>
+                <!-- Links
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                -->
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+
+                <!-- Ingresar -->
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#loginModal" href="#">Ingresar</a>
+                </li>
+
+                <!-- Registrarse -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Registrarse</a>
+                </li>
+
+            </ul>
+        </nav>
+        <br>
+    </div>
+
+    <div class="container">
+        <!-- Formulario de registro de producto -->
+        <h3>Registro de venta</h3>
+        <br/>
+
+        <form>
+
+            <div class="form-row">
+                <div class="col">
+                    <label for="fechaVenta">Fecha en la que se realizó la venta</label>
+                    <input type="date" class="form-control" placeholder="Fecha de venta" required>
+                </div>
+                <div class="col">
+                    <label for="idPedido">Pedido</label>
+                    <input type="number" class="form-control" placeholder="Pedido" required>
+                </div>
+            </div>
+            <br/>
+
+            <!-- Botón del enviar formulario-->
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-title text-center">
+                        <h4>Ingresar</h4>
+                    </div>
+                    <div class="d-flex flex-column text-center">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email1" placeholder="Tu correo...">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password1"
+                                    placeholder="Tu contraseña...">
+                            </div>
+                            <button type="button" class="btn btn-info
+                                        btn-block btn-round">Ingresar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <div class="signup-section">¿Aún no tienes una
+                        cuenta? <a href="#a" class="text-info">
+                            Registrate</a>.</div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
